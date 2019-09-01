@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ajay Kumar &mdash; Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            height: 200px;
+            background: linear-gradient(45deg, #4c00ff, transparent), repeating-linear-gradient(45deg, #b700ff 0%, #b700ff 5%, transparent 5%, transparent 10%), #d876ff repeating-linear-gradient(-45deg, rgba(183, 0, 255, 0.5) 0%, rgba(183, 0, 255, 0.5) 5%, transparent 5%, transparent 10%);
+            width: 100%;
+            position: relative;
+        }
+
+        .fnavbar {
+
+            background: linear-gradient(115deg, #511dca, transparent 100%), repeating-linear-gradient(90deg, #b95adf 5%, #a949cf 5%, transparent 5%, transparent 50%), #d876ff repeating-linear-gradient(315deg, rgba(183, 0, 255, 0.5) 0%, rgba(158, 48, 202, 0.5) 5%, transparent 5%, transparent 10%);
+
+        }
+
+        .card {
+            margin-top: 20px;
+        }
+
+        .card img {
+            height: 300px;
+            width: 100%;
+        }
+
+        .body {
+            font-family: 'Nunito', sans-serif;
+            background: #EFF1F7;
+        }
+
+        h1#title_name {
+            font-size: 3em;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .center-immage {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .navbar-brand {
+            padding: 0 15px;
+            height: 80px;
+            line-height: 80px;
+            font-size: 3ch;
+        }
+
+        .navbar-nav>li {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 3ch;
+
+        }
+
+        .jumbotron {
+            width: 100%;
+        }
+
+        .center-immage {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: auto;
+        }
+
+        .whole {
+            background: #09c999;
+            padding: 0em;
+            border-radius: 25px;
+            width: auto;
+            height: auto;
+            -webkit-clip-path: circle(15% at 50% 50%);
+            clip-path: circle(15% at 50% 50%);
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            cursor: pointer;
+        }
+
+        .whole:hover {
+            -webkit-clip-path: circle(100%);
+            clip-path: circle(100%);
+            background: #00B6FF;
+        }
+
+        .whole h1 {
+            color: white;
+            margin-left: 4%;
+        }
+
+        .whole p {
+            color: white;
+            font-size: .8rem;
+        }
+
+        .whole span {
+            float: right;
+            color: white;
+            font-weight: bold;
+            -webkit-transition: color .5s;
+            transition: color .5s;
+            position: relative;
+            margin-right: 0%;
+        }
+
+        .whole:hover span {
+            color: rgba(255, 255, 255, 0);
+        }
+
+        @media (max-width: 600px) {
+            .navbar-nav>li {
+                font-size: 14px;
+            }
+
+            .navbar-brand {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Ajay Kumar's Portfolio </a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item ">
+                    <a class="white-text nav-link" href="index.html#aboutme">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="white-text nav-link" href="index.html#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="white-text nav-link" href="index.html#footer">Contact</a>
+                </li>
+                <li class="nav-item active">
+                    <a class=" blue-text nav-link" href="documents/Ajay's Resume.pdf" target="_blank">My Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="jumbotron" id="aboutme">
+                <div class="whole">
+                    <br>
+                    <div class="whole-inner">
+                        <img class="center-immage" src="images/Ajay.png" style="width:200px; height:200px" />
+                        <span>i</span>
+                        <h1> Hi There :)</h1>
+                    </div>
+                </div>
+                <h1>About me</h1>
+                <p>Enthusiastic, Persevering and Creative. I am passionate about the world of Networking and Internet of
+                    things. Having completed schooling from Vidya Mandir Estancia, Chennai; I am pursuing my final year
+                    of B.
+                    Tech in Information Technology at SRM Institute of Science and Technology. Apart from exploring new
+                    technologies, Volleyball and Cricket make me feel happy.</p>
+            </div>
+        </div>
+        <h1>My Work</h1>
+        <div class="row" id="projects">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://www.electronicwings.com/public/images/user_images/images/NodeMCU/NodeMCU%20Interfaces/Google%20Assi/google-assistant-hardware.jpg"
+                        class="img-thumbnail mx-auto d-block" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Automation </h5>
+                        <p class="card-text">This system aims to automate house lights and AC's on user's command and
+                            also by continuously monitoring temperature and humidity.
+                        </p>
+                        <a href="https://github.com/ajaykumar1901/Home-Automation" target="_blank"
+                            class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://gasmartcity.com/wp-content/uploads/2018/07/adaptive-traffic-management-.png"
+                        class="img-thumbnail mx-auto d-block" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Traffic Management System</h5>
+                        <p class="card-text">This system aim to automate traﬃc system by controlling traffic lights at
+                            junctions.The system has highest priority to emergency response vehicles.
+                        </p>
+                        <a href="https://github.com/ajaykumar1901/Smart-Traffic-Management-System" target="_blank"
+                            class="btn btn-primary">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="https://mita.lrv.lt/uploads/mita/news/images/852x536_crop/836_940e6af9442416525cebe7f1b59fd032.jpg"
+                        class="img-thumbnail mx-auto d-block" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Smart Water Management System</h5>
+                        <p class="card-text">The system detects leakage of taps and automatically stops the water ﬂow.
+                            It also collects data on consumption of water which will be further used for analysis.</p>
+                        <button type="button" class="btn btn-primary" disabled>Private</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="fnavbar jumbotron" id="footer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Contact</h3>
+                    <div class="list">
+                        <a href="tel://7358278371" target="_blank"><img src="icons/Phone.png"
+                                style="width:50px; height:50px"></a>
+                        <emsp></emsp>
+                        <emsp></emsp>
+                        <emsp></emsp>
+                        <a href="email://ajay.jony@gmail.com" target="_blank"><img src="icons/Email.png"
+                                style="width:50px; height:50px"></a>
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Social</h3>
+                    <div class="list">
+                        <a href="https://github.com/ajaykumar1901" target="_blank"><img src="icons/Github.png"
+                                style="width:50px; height:50px"></a>
+                        <ensp></ensp>
+                        <a href="https://www.linkedin.com/in/ajaykumar-r/" target="_blank"><img src="icons/LinkedIn.png"
+                                style="width:50px; height:50px"></a>
+                        <ensp></ensp>
+                        <a href="https://www.facebook.com/Ajaykumar1999" target="_blank"><img src="icons/Facebook.png"
+                                style="width:50px; height:50px"></a>
+                        <ensp></ensp>
+                        <a href="https://www.instagram.com/a.j.a.y_kumar/" target="_blank"><img
+                                src="icons/Instagram.png" style="width:50px; height:50px"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
