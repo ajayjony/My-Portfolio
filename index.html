@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <style>
         .navbar {
             height: 200px;
@@ -49,6 +50,8 @@
 
         html {
             scroll-behavior: smooth;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
         }
 
         .center-immage {
@@ -129,7 +132,7 @@
             color: rgba(255, 255, 255, 0);
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             .navbar-nav>li {
                 font-size: 14px;
             }
@@ -137,16 +140,61 @@
             .navbar-brand {
                 font-size: 20px;
             }
+
+            .navbar {
+                height: auto;
+            }
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            background-color: #3b4946;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
         }
     </style>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Ajay Kumar </a>
         <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -184,29 +232,35 @@
                     </div>
                 </div>
                 <h1>About Me</h1>
-                <p>Enthusiastic, Persevering and Creative. I am passionate about the world of Networking and Internet of
-                    things. Having completed schooling from Vidya Mandir Estancia, Chennai; I am pursuing my final year
+                <p>Enthusiastic, Persevering and Creative. I am passionate about the world of Networking and
+                    Internet of
+                    things. Having completed schooling from Vidya Mandir Estancia, Chennai; I am pursuing my final
+                    year
                     of B.
-                    Tech in Information Technology at SRM Institute of Science and Technology. Apart from exploring new
+                    Tech in Information Technology at SRM Institute of Science and Technology. Apart from exploring
+                    new
                     technologies, Volleyball and Cricket make me feel happy.</p>
             </div>
         </div>
         <div class="row">
             <div class=" jumbotron col-sm-6">
                 <h1>Skills</h1>
-                <a class="btn btn-warning">C++</a>
-                <a class="btn btn-warning">IoT</a>
-                <a class="btn btn-warning">HTML</a>
-                <a class="btn btn-warning">CSS</a>
-                <a class="btn btn-warning">AWS</a>
-                <a class="btn btn-warning">SQL</a>
+                <div class="row">
+                    <div class="col mx-auto"><a class="btn btn-warning">C++</a></div>
+                    <div class="col mx-auto"><a class="btn btn-warning">IoT</a></div>
+                    <div class="col mx-auto"><a class="btn btn-warning">HTML++</a></div>
+                    <div class="col mx-auto"><a class="btn btn-warning">CSS</a></div>
+                    <div class="col mx-auto"><a class="btn btn-warning">AWS++</a></div>
+                    <div class="col mx-auto"><a class="btn btn-warning">SQL</a></div>
+                </div>
             </div>
             <div class="jumbotron col-sm-6">
                 <h1>Area of Interest</h1>
-                <a class="btn btn-success">Computer Networks</a>
-                <a class="btn btn-success">IoT</a>
-                <a class="btn btn-success">Web Development</a>
-
+                <div class="row">
+                    <div class="col mx-auto"><a class="btn btn-success mx-auto">Computer Networks</a></div>
+                    <div class="col mx-auto"><a class="btn btn-success mx-auto">IoT</a></div>
+                    <div class="col mx-auto"><a class="btn btn-success mx-auto">Web Development</a></div>
+                </div>
             </div>
         </div>
         <h1>My Work</h1>
@@ -217,7 +271,8 @@
                         class="img-thumbnail mx-auto d-block" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Home Automation </h5>
-                        <p class="card-text">This system aims to automate house lights and AC's on user's command and
+                        <p class="card-text">This system aims to automate house lights and AC's on user's command
+                            and
                             also by continuously monitoring temperature and humidity.
                         </p>
                         <a href="https://github.com/ajaykumar1901/Home-Automation" target="_blank"
@@ -231,7 +286,8 @@
                         class="img-thumbnail mx-auto d-block" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Smart Traffic Management System</h5>
-                        <p class="card-text">This system aim to automate traﬃc system by controlling traffic lights at
+                        <p class="card-text">This system aim to automate traﬃc system by controlling traffic lights
+                            at
                             junctions.The system has highest priority to emergency response vehicles.
                         </p>
                         <a href="https://github.com/ajaykumar1901/Smart-Traffic-Management-System" target="_blank"
@@ -245,8 +301,10 @@
                         class="img-thumbnail mx-auto d-block" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">Smart Water Management System</h5>
-                        <p class="card-text">The system detects leakage of taps and automatically stops the water ﬂow.
-                            It also collects data on consumption of water which will be further used for analysis.</p>
+                        <p class="card-text">The system detects leakage of taps and automatically stops the water
+                            ﬂow.
+                            It also collects data on consumption of water which will be further used for analysis.
+                        </p>
                         <button type="button" class="btn btn-primary" disabled>Private</button>
 
                     </div>
