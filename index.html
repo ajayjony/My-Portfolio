@@ -26,6 +26,7 @@
 
         .card {
             margin-top: 20px;
+
         }
 
         .card img {
@@ -132,7 +133,7 @@
             color: rgba(255, 255, 255, 0);
         }
 
-        @media (max-width: 800px) {
+        @media (max-width: 990px) {
             .navbar-nav>li {
                 font-size: 14px;
             }
@@ -143,6 +144,12 @@
 
             .navbar {
                 height: auto;
+            }
+
+            html {
+                scroll-behavior: smooth;
+                overflow: scroll;
+                -webkit-overflow-scrolling: touch;
             }
         }
 
@@ -245,21 +252,40 @@
         <div class="row">
             <div class=" jumbotron col-sm-6">
                 <h1>Skills</h1>
+                <br>
                 <div class="row">
-                    <div class="col mx-auto"><a class="btn btn-warning">C++</a></div>
-                    <div class="col mx-auto"><a class="btn btn-warning">IoT</a></div>
-                    <div class="col mx-auto"><a class="btn btn-warning">HTML++</a></div>
-                    <div class="col mx-auto"><a class="btn btn-warning">CSS</a></div>
-                    <div class="col mx-auto"><a class="btn btn-warning">AWS++</a></div>
-                    <div class="col mx-auto"><a class="btn btn-warning">SQL</a></div>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-warning">
+                        <h6 class="list-group-item-heading">C++</h6>
+                    </a>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-warning">
+                        <h6 class="list-group-item-heading">HTML</h6>
+                    </a>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-warning">
+                        <h6 class="list-group-item-heading">CSS</h6>
+                    </a>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-warning">
+                        <h6 class="list-group-item-heading">AWS</h6>
+                    </a>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-warning">
+                        <h6 class="list-group-item-heading">SQL</h6>
+                    </a>
+
                 </div>
             </div>
             <div class="jumbotron col-sm-6">
                 <h1>Area of Interest</h1>
+                <br>
                 <div class="row">
-                    <div class="col mx-auto"><a class="btn btn-success mx-auto">Computer Networks</a></div>
-                    <div class="col mx-auto"><a class="btn btn-success mx-auto">IoT</a></div>
-                    <div class="col mx-auto"><a class="btn btn-success mx-auto">Web Development</a></div>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-success">
+                        <h6 class="list-group-item-heading">Computer Networks</h6>
+                    </a>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-success">
+                        <h6 class="list-group-item-heading">IoT</h6>
+                    </a>
+                    <a class="col-sm-6 col mx-auto list-group-item btn btn-success">
+                        <h6 class="list-group-item-heading">Web Development</h6>
+                    </a>
+
                 </div>
             </div>
         </div>
